@@ -1,0 +1,6 @@
+RUN wget https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.9.0.56191-arm64.tar.gz \
+    mkdir /home/%user%/App \
+    mv jetbrains-toolbox-2.9.0.56191-arm64.tar.gz /home/%user%/App/ \
+    cd /home/%user%/App/ \
+    tar xvf jetbrains-toolbox-2.9.0.56191-arm64.tar.gz
+

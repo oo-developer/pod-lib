@@ -1,3 +1,3 @@
-RUN wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/e3a5acfb517a443235981655413d566533107e92/code_1.104.2-1758714550_arm64.deb && \
-    apt install code_1.104.2-1758714550_arm64.deb -y
+RUN wget -O /root/vscode.deb https://vscode.download.prss.microsoft.com/dbazure/download/stable/e3a5acfb517a443235981655413d566533107e92/code_1.104.2-1758714550_arm64.deb && \
+    apt install /root/vscode.deb -y
 

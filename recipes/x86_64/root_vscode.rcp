@@ -1,0 +1,3 @@
+RUN wget -O /root/vscode.deb https://vscode.download.prss.microsoft.com/dbazure/download/stable/385651c938df8a906869babee516bffd0ddb9829/code_1.104.3-1759409451_amd64.deb && \
+    apt install /root/vscode.deb -y
+

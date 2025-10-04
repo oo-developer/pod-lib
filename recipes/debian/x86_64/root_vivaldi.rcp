@@ -1,6 +1,6 @@
 RUN apt update && apt upgrade -y && \
     wget -O /root/vivaldi.deb https://downloads.vivaldi.com/stable/vivaldi-stable_7.6.3797.58-1_amd64.deb && \
     apt install /root/vivaldi.deb -y && \
-    rm vivaldi.deb
+    rm /root/vivaldi.deb
 
 

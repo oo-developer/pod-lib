@@ -1,3 +1,6 @@
-RUN wget -O /root/vscode.deb https://vscode.download.prss.microsoft.com/dbazure/download/stable/385651c938df8a906869babee516bffd0ddb9829/code_1.104.3-1759409451_amd64.deb && \
-    apt install /root/vscode.deb -y
-
+RUN wget https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
+    dpkg -i packages-microsoft-prod.deb && \
+    rm packages-microsoft-prod.deb && \
+    apt-get update && \
+    apt-get install -y code && \
+    rm -rf /var/lib/apt/lists/*

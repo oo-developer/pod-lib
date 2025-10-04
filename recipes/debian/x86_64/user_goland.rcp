@@ -1,5 +1,5 @@
 RUN mkdir -p /home/%user%/Applications && \
     cd /home/%user%/Applications && \
-    wget -O goland.deb https://download-cdn.jetbrains.com/go/goland-2025.2.3.tar.gz && \
-    apt install ./goland.deb -y && \
-    rm ./goland.deb
+    wget -O goland.tar.gz https://download-cdn.jetbrains.com/go/goland-2025.2.3.tar.gz && \
+    tar xvf goland.tar.gz && \
+    rm goland.tar.gz

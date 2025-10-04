@@ -1,3 +1,6 @@
-RUN wget -O /root/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
-    apt install /root/chrome.deb -y
+RUN apt update && apt upgrade -y && \
+    wget -O /root/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt install /root/chrome.deb -y && \
+    rm /root/chrome.deb
+
 

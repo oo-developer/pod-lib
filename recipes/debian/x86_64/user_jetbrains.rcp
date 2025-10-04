@@ -1,0 +1,6 @@
+RUN mkdir -p /home/%user%/Applications && \
+    cd /home/%user%/Applications && \
+    wget -O ./jetbrains.tar.gz https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-2.9.1.58121.tar.gz && \
+    tar xvf ./jetbrains.tar.gz && \
+    rm ./jetbrains.tar.gz && \
+    echo

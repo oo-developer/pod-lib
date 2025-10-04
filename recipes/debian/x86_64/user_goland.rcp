@@ -2,4 +2,5 @@ RUN mkdir -p /home/%user%/Applications && \
     cd /home/%user%/Applications && \
     wget -O goland.tar.gz https://download-cdn.jetbrains.com/go/goland-2025.2.3.tar.gz && \
     tar xvf goland.tar.gz && \
-    rm goland.tar.gz
+    rm goland.tar.gz && \
+    echo export 'PATH=${PATH}:/home/%user%/Applications/GoLand-2025.2.3/bin' >> /home/%user%/.bashrc

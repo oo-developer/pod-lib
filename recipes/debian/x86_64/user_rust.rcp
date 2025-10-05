@@ -1,2 +1,2 @@
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y \
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y && \
     echo 'export PATH="/home/%user%/.cargo/bin:${PATH}"' >> /home/%user%/.bashrc

@@ -1,6 +1,6 @@
 RUN echo "sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon" >> /home/%user%/install_nix.sh && \
-    echo "echo trusted-users = %user% | sudo tee -a /etc/nix/nix.conf"  >> /home/%user%/install_nix.sh && \
     echo "sudo systemctl restart nix-daemon"  >> /home/%user%/install_nix.sh && \
+    echo "echo trusted-users = %user% | sudo tee -a /etc/nix/nix.conf"  >> /home/%user%/install_nix.sh && \
     chmod +x /home/%user%/install_nix.sh
 
 

@@ -1,0 +1,6 @@
+RUN mkdir -p /home/%user%/Applications && \
+    cd /home/%user%/Applications && \
+    wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIU-2025.2.3.tar.gz && \
+    tar xvf intellij.tar.gz && \
+    rm intellij.tar.gz && \
+    echo export 'PATH=$PATH:/home/%user%/Applications/idea-IU-252.26830.84/bin' >> /home/%user%/.bashrc
